@@ -1,0 +1,33 @@
+<!-- Author: River Pearson -->
+<!-- UID: 115987050 -->
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>Delete Activity</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+	<h1>Check Off Task</h1>
+
+    <form action="/deleteActivityConfirmation" method="post">
+		<label>
+			Select the completed activity you would like to remove: <br>
+			<select name="activitySelect">
+				<option disabled selected value></option>
+				<%- activities %>
+			</select>
+		</label>
+        
+		<br><br>
+		<input type="reset" />
+		<input type="submit" value="Delete Activity"/>
+	</form>
+
+	<hr>
+    <a href="/">HOME</a>
+</body>
+
+</html>
