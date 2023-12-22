@@ -16,7 +16,7 @@ const fetch = require("node-fetch");
 const apiUrl = "http://www.boredapi.com/api/activity/";
 
 /* Port Number Initialization */
-const portNumber = 5000;
+const portNumber = process.env.PORT ?? 5000;
 
 /* Database and Collection */
 const { MongoClient, ServerApiVersion } = require('mongodb');
